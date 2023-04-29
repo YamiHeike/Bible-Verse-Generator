@@ -1,0 +1,27 @@
+/*Global Settings*/
+
+html, body {
+    font-size: 1.25em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styling header*/
+
+h1 {
+    text-transform: uppercase;
+}
+
+/*Styling main section*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
