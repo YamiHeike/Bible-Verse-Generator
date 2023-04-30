@@ -56,5 +56,32 @@ main h3 {
     font-size: .8rem;
     font-weight: 300;
     font-family: 'Arial', sans-serif;
-    margin-top: 1.5em;
+    margin-top: 2em;
+}
+
+.generator-submit {
+    padding: .55em;
+    border: 1px solid #a98467;
+    color:#302824;
+    cursor: pointer;
+    background-color: inherit;
+    outline: none;
+    margin-left: .5em;
+    vertical-align: bottom;
+    transition: background-color .3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: .25em;
+}
+
+.generator-submit:hover, .generator-submit:focus {
+    background-color: #aba588;
+}
+
+label {
+    color: #6c584c;
+}
+
+.generator {
+    line-height: 1.5;
+    font-size: .75rem;
 }
