@@ -68,13 +68,13 @@ main h3 {
     outline: none;
     margin-left: .5em;
     vertical-align: bottom;
-    transition: background-color .3s ease-in-out;
-    text-transform: uppercase;
+    transition: all .3s ease-in-out;
     border-radius: .25em;
 }
 
 .generator-submit:hover, .generator-submit:focus {
     background-color: #aba588;
+    color: whitesmoke;
 }
 
 label {
