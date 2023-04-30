@@ -15,9 +15,10 @@ html, body {
 
 /*Styling header*/
 header {
-    background-color: #251e19;
+    background-color: #0b0907;
     color: #f0ead2;
     padding: 0.5em;
+    mix-blend-mode: hard-light;
 }
 
 h1 {
@@ -34,9 +35,8 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    //background-color: #dde5b6;
-    background-color: #f0ead2;
-    color: #6c584c;
+    background-color: whitesmoke;
+    color: #302824;
     min-height: 70vh;
     width: 80%;
     margin: 2em auto;
@@ -44,6 +44,17 @@ main {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+main h3 {
+    margin-bottom: 1em;
+    font-family: 'Forum', sans-serif;
+}
+
+/*Styling the form*/
+
 .generator-form {
-    
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+    margin-top: 1.5em;
 }
