@@ -2,6 +2,9 @@
 
 html, body {
     font-size: 1.25em;
+    background: url('bible.webp') no-repeat center;
+    background-size: 100%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
@@ -12,16 +15,16 @@ html, body {
 
 /*Styling header*/
 header {
-    background-color: #dde5b6;
-    color: #6c584c;
+    background-color: #6c584c;
+    color: #f0ead2;
     padding: 0.5em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 h1 {
     text-transform: uppercase;
+    font-size: 1.5em;
     font-weight: 100;
-    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 /*Styling main section*/
@@ -31,6 +34,16 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 80vh;
+    //background-color: #dde5b6;
     background-color: #f0ead2;
+    color: #6c584c;
+    min-height: 70vh;
+    width: 80%;
+    margin: 2em auto;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.generator-form {
+    
 }
