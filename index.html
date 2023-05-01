@@ -19,21 +19,25 @@
     </header>
 <!--Main section with the generator where all of the verses will be displayed-->
     <main>
-        <div class="description">
-            <h3>Choose a keyword and our generator will find you an inspiring Bible verse!</h3>
-            <hr>
-        </div>
-        <div class="generator-form">
-            <form action="">
-                <label for="generator">Keyword:</label>
-                <input type="text" placeholder="Enter the keyword" class="generator">
-                <button class="generator-submit">Search</button>
-            </form>
-        </div>
-        <div class="verse">
-
+        <div class="contents">
+            <div class="description">
+                <h3>Choose a Bible Book and our generator will find you a random inspiring verse from the Scripture!</h3>
+                <hr>
+            </div>
+            <div class="generator-form">
+                <form action="">
+                    <label for="generator">Book title (e.g John):</label>
+                    <input type="text" placeholder="Enter the title" class="generator">
+                    <button class="generator-submit">Search</button>
+                </form>
+            </div>
+            <div class="verse">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi assumenda, doloremque dolorem deserunt rerum deleniti provident reiciendis quas ad explicabo?</p>
+            </div>
         </div>
     </main>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </body>
 </html>

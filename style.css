@@ -3,7 +3,7 @@
 html, body {
     font-size: 1.25em;
     background: url('bible.webp') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -25,7 +25,13 @@ h1 {
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 100;
-    
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 1em;
+    }
 }
 
 /*Styling main section*/
@@ -45,14 +51,18 @@ main {
 }
 
 main h3 {
-    margin-bottom: 1em;
+    margin: 1em 0;
     font-family: 'Forum', sans-serif;
+}
+
+.contents {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*Styling the form*/
 
 .generator-form {
-    text-transform: uppercase;
     font-size: .8rem;
     font-weight: 300;
     font-family: 'Arial', sans-serif;
@@ -73,15 +83,30 @@ main h3 {
 }
 
 .generator-submit:hover, .generator-submit:focus {
-    background-color: #aba588;
+    background-color: #ab9f88;
     color: whitesmoke;
 }
 
 label {
     color: #6c584c;
+    display: block;
+    font-weight: 700;
 }
 
 .generator {
     line-height: 1.5;
     font-size: .75rem;
+    margin-top: .5em;
 }
+
+@media all and (max-width: 500px) {
+    main h3 {
+        font-size: .75em;
+    }    
+
+    .generator {
+        max-width: 65%;
+    }
+}
+/*Styling verses - invisible div for now*/
+
