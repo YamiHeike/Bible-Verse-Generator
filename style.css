@@ -55,6 +55,13 @@ main h3 {
     font-family: 'Forum', sans-serif;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contents {
     width: 80%;
     margin: 0 auto;
@@ -80,6 +87,8 @@ main h3 {
     vertical-align: bottom;
     transition: all .3s ease-in-out;
     border-radius: .25em;
+    margin-top: 1.75em;
+    width: 100%;
 }
 
 .generator-submit:hover, .generator-submit:focus {
@@ -91,12 +100,14 @@ label {
     color: #6c584c;
     display: block;
     font-weight: 700;
+    margin-top: .75em;
 }
 
-.generator {
+.generator, .generator-chapter, .generator-verse {
     line-height: 1.5;
     font-size: .75rem;
     margin-top: .5em;
+    width: 100%;
 }
 
 @media all and (max-width: 500px) {
@@ -104,9 +115,9 @@ label {
         font-size: .75em;
     }    
 
-    .generator {
+    /*.generator, .generator-chapter, .generator-verse {
         max-width: 65%;
-    }
+    }*/
 }
 /*Styling verses - invisible div for now*/
 

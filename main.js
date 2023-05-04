@@ -2,16 +2,14 @@ const contents = document.querySelector('.contents');
 
 const generator = {
     button: document.querySelector('.generator-submit'),
-    input: document.querySelector('.generator'),
-    label: document.querySelector('label')
+    book: document.querySelector('.generator'),
+    chapter: document.querySelector('.generator-chapter'),
+    verse: document.querySelector('.generator-verse')
 }
 
-const getBibleVerse = async (bookName) => {
+const getBibleVerse = async (bookName, chapterNum, verseNum) => {
     try {
-        let chapterNum = Math.floor(Math.random() * 20 + 1);
-        let verseNum = Math.floor(Math.random() * 10 + 1);
         const res = await axios.get(`https://bible-api.com/${bookName} ${chapterNum}:${verseNum}`);
-        console.log(res);
         const newDiv = document.createElement('div');
         const verseH3 = document.createElement('h3');
         const verseP = document.createElement('p');
@@ -21,8 +19,8 @@ const getBibleVerse = async (bookName) => {
         contents.appendChild(newDiv)
         newDiv.appendChild(verseH3);
         newDiv.appendChild(verseP);
+        
     }
-    
     catch {
         return 'An error occured. Enter a valid Bible Book Name'
     }
@@ -30,6 +28,8 @@ const getBibleVerse = async (bookName) => {
 
 generator.button.addEventListener('click', function(e) {
     e.preventDefault();
-    getBibleVerse(generator.input.value);
-    generator.input.value = ''
+    getBibleVerse(generator.book.value, generator.chapter.value, generator.verse.value);
+    generator.book.value = '';
+    generator.chapter.value = '';
+    generator.verse.value = '';
 })
