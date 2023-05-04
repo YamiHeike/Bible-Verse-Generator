@@ -110,14 +110,6 @@ label {
 }
 /*Styling verses - invisible div for now*/
 
-.verse {
-    border: 2px solid #dde5b6;
-    margin: .85em auto;
-    padding: .75em;
-    border-radius: .15em;
-    transition: all .3s ease-in-out;
-}
-
 .verse h3 {
     font-size: 1em;
     font-weight: 600;
@@ -131,8 +123,13 @@ label {
     
 }
 
-.verse:hover, .verse:focus {
-    background-color: #d7cbb4;
+.verse {
+    background-color: rgb(230, 229, 229);
     color:#302824;
-    border: 1px solid #302824
+    border: 1px solid #302824;
+    mix-blend-mode: difference;
+    margin: .85em auto;
+    padding: .75em;
+    border-radius: .15em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
