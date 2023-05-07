@@ -176,8 +176,6 @@ label {
 footer {
     background-color: rgba(16, 16, 16, 0.87);
     color: rgb(236, 233, 233);
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
