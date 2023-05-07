@@ -2,7 +2,8 @@
 
 html, body {
     font-size: 1.25em;
-    background: url('bible.webp') no-repeat center;
+    //background: url('bible.webp') no-repeat center;
+    background: url('lily.jpeg') no-repeat center;
     background-color: #0b0907;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
