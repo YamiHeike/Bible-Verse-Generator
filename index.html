@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d93e824905.js" crossorigin="anonymous"></script>
     <title>Bible verses generator</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
     <main>
         <div class="contents">
             <div class="description">
-                <h3>Choose a Bible Book and our generator will find you an inspiring verse from the Scripture!</h3>
+                <h3>Please fill the following fields and our generator will find your verse in the Scripture!</h3>
                 <hr>
             </div>
             <div class="generator-form">
@@ -32,16 +33,20 @@
                     <input type="text" class="generator-chapter" placeholder="Chapter number">
                     <label for="generator-verse">Verse(s):</label>
                     <input type="text" class="generator-verse" placeholder="Verse number">
-                    <button class="generator-submit">Search</button>
+                 <button class="generator-submit">Search</button>
                 </form>
+            </div>
+            
+            <div class="verse"  class="verse-template">
+                <button id="cross-icon-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi accusamus cupiditate hic quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sequi.</p>
             </div>
         </div>
     
-        <!--Verse div, for styling purposes
-        <div class="verse">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi accusamus cupiditate hic quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sequi.</p>
-        </div>-->
+        
     </main>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>

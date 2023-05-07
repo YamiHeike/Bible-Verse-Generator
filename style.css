@@ -3,6 +3,7 @@
 html, body {
     font-size: 1.25em;
     background: url('bible.webp') no-repeat center;
+    background-color: #0b0907;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -43,7 +44,7 @@ main {
     flex-direction: column;
     background-color: whitesmoke;
     color: #302824;
-    min-height: 70vh;
+    min-height: 65vh;
     width: 80%;
     margin: 2em auto;
     border-radius: .5em;
@@ -83,12 +84,12 @@ form {
     cursor: pointer;
     background-color: inherit;
     outline: none;
-    margin-left: .5em;
     vertical-align: bottom;
     transition: all .3s ease-in-out;
     border-radius: .25em;
-    margin-top: 1.75em;
+    margin: 1.75em 0;
     width: 100%;
+    font-size: 1.2em;
 }
 
 .generator-submit:hover, .generator-submit:focus {
@@ -114,11 +115,8 @@ label {
     main h3 {
         font-size: .75em;
     }    
-
-    /*.generator, .generator-chapter, .generator-verse {
-        max-width: 65%;
-    }*/
 }
+
 /*Styling verses - invisible div for now*/
 
 .verse h3 {
@@ -128,17 +126,27 @@ label {
 
 .verse p {
     font-size: .75em;
-    padding-bottom: .5em;
+    padding-bottom: .25em;
     font-family: 'Calibri', sans-serif;
     font-weight: 100;
     
 }
 
+.verse button {
+    position: absolute;
+    right: 1em;
+    font-size: 1rem;
+    top: 1rem;
+}
+
+.verse button:hover {
+    cursor: pointer;
+}
+
 .verse {
-    background-color: rgb(230, 229, 229);
-    color:#302824;
-    border: 1px solid #302824;
-    mix-blend-mode: difference;
+    position: relative;
+    background-color: #0b0907;
+    color: rgb(230, 229, 229);
     margin: .85em auto;
     padding: .75em;
     border-radius: .15em;
