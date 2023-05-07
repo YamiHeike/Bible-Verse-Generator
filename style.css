@@ -6,6 +6,7 @@ html, body {
     background-color: #0b0907;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
+    min-height: 100dvh;
 }
 
 * {
@@ -20,6 +21,7 @@ header {
     color: #f0ead2;
     padding: 0.5em;
     mix-blend-mode: hard-light;
+    position: sticky;
 }
 
 h1 {
@@ -29,13 +31,15 @@ h1 {
     text-align: center;
 }
 
-@media all and (max-width: 500px) {
-    h1 {
-        font-size: 1em;
-    }
-}
 
 /*Styling main section*/
+.container {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 main {
     display: flex;
@@ -44,9 +48,8 @@ main {
     flex-direction: column;
     background-color: whitesmoke;
     color: #302824;
-    min-height: 65vh;
-    width: 80%;
-    margin: 2em auto;
+    width: 90%;
+    margin: 0 auto;
     border-radius: .5em;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -66,6 +69,23 @@ form {
 .contents {
     width: 90%;
     margin: 0 auto;
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    main {
+        width: 95%;
+        margin: .55em auto;
+        min-height: 70dvh
+    }
+
+    .container {
+        margin-top: .25em;
+    }
+    
 }
 
 /*Styling the form*/
@@ -89,7 +109,7 @@ form {
     border-radius: .25em;
     margin: 1.75em 0;
     width: 100%;
-    font-size: 1.2em;
+    font-size: .8em;
 }
 
 .generator-submit:hover, .generator-submit:focus {
@@ -151,4 +171,17 @@ label {
     padding: .75em;
     border-radius: .15em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer {
+    background-color: rgba(16, 16, 16, 0.87);
+    color: rgb(236, 233, 233);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    padding: 1em;
+    font-size: .75rem;
 }

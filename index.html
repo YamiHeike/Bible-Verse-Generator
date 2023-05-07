@@ -19,35 +19,41 @@
         </h1>
     </header>
 <!--Main section with the generator where all of the verses will be displayed-->
-    <main>
-        <div class="contents">
-            <div class="description">
-                <h3>Please fill the following fields and our generator will find your verse in the Scripture!</h3>
-                <hr>
-            </div>
-            <div class="generator-form">
-                <form action="">
-                    <label for="generator">Book title (e.g John):</label>
-                    <input type="text" placeholder="Enter the title" class="generator">
-                    <label for="generator-chapter">Chapter:</label>
-                    <input type="text" class="generator-chapter" placeholder="Chapter number">
-                    <label for="generator-verse">Verse(s):</label>
-                    <input type="text" class="generator-verse" placeholder="Verse number">
-                 <button class="generator-submit">Search</button>
-                </form>
+    <div class="container">
+        <main>
+            <div class="contents">
+                <div class="description">
+                    <h3>Please fill the following fields and our generator will find your verse in the Scripture!</h3>
+                    <hr>
+                </div>
+                <div class="generator-form">
+                    <form action="">
+                        <label for="generator">Book title (e.g John):</label>
+                        <input type="text" placeholder="Enter the title" class="generator">
+                        <label for="generator-chapter">Chapter:</label>
+                        <input type="text" class="generator-chapter" placeholder="Chapter number">
+                        <label for="generator-verse">Verse(s):</label>
+                        <input type="text" class="generator-verse" placeholder="Verse number">
+                    <button class="generator-submit">Search</button>
+                    </form>
+                </div>
+                
+                <div class="verse"  class="verse-template">
+                    <button id="cross-icon-button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi accusamus cupiditate hic quasi. Lorem ipsum dolor </p>
+                </div>
             </div>
             
-            <div class="verse"  class="verse-template">
-                <button id="cross-icon-button">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi accusamus cupiditate hic quasi. Lorem ipsum dolor </p>
-            </div>
-        </div>
-    
-        
-    </main>
+        </main>
+    </div>
+    <footer>
+        <p>
+            © YamiHeike
+        </p>
+    </footer>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </body>
